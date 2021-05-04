@@ -89,7 +89,7 @@ img{
      display: flex;
      flex-direction: column;
      align-items: flex-end;
-     justify-content: flex-end;
+     justify-content: flex-start;
      box-shadow: var(--shadow);
  }
 
@@ -146,6 +146,17 @@ img{
     color: var(--dark);
     border-radius: 5%;*/
     text-decoration: underline;
+}
+.boxes{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
 }
 
 /*footer*/
