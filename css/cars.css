@@ -160,3 +160,9 @@ img{
 }
 
 /*footer*/
+footer{
+    background: var(--dark);
+    width: auto;
+    color: var(--primary);
+    text-align: center;
+}

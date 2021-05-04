@@ -9,6 +9,7 @@ html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
+    
 
 }
 
@@ -16,6 +17,7 @@ body {
     background: #ccc;
     margin: 30px 50px;
     line-height: 1.4;
+    
 }
 
 .btn{
@@ -50,7 +52,7 @@ img{
      grid-template-columns: repeat(4, 1fr);
  }
  .main-nav a {
-    background: var(--dark);
+     background: var(--dark);
      display: block;
      text-decoration: none;
      padding: 0.8rem;
@@ -63,7 +65,7 @@ img{
 
  .main-nav a:hover{
      background: var(--primary);
-     color: var(--dark);
+     color: var(--dark);   
  }
  li .active {
     background: var(--primary);
@@ -82,30 +84,32 @@ img{
  .showcase{
      grid-area: showcase;
      min-height: 400px;
-     background: url(../Images/season3-header.jpg);
+     background: url(../Images/season3-header-test.jpg);
      background-size: cover;
      background-position: center;
      padding: 3rem;
      display: flex;
      flex-direction: column;
      align-items: flex-end;
-     justify-content: flex-end;
+     justify-content: flex-start;
      box-shadow: var(--shadow);
  }
 
  .showcase h1 {
-     font-size: 4rem;
+     font-size: 2rem;
      margin-bottom: 0;
-     color: var(--primary)
+     color: var(--light)
  }
 
  .showcase p {
-     font-size: 1.3rem;
+     font-size: 1rem;
+     font-weight: bold;
      margin-top: 0;
      color: var(--primary);
  }
  .top-box {
      background: var(--primary);
+     font-weight: bold;
      display: grid;
      align-items: center;
      justify-items: baseline;
@@ -158,4 +162,14 @@ img{
     padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
 }
+.box :hover{
+    text-decoration: underline white;
+}
 /*footer*/
+footer{
+    background: var(--dark);
+    width: auto;
+    color: var(--primary);
+    text-align: center;
+   
+}

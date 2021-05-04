@@ -147,5 +147,25 @@ img{
     border-radius: 5%;*/
     text-decoration: underline;
 }
+.boxes{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.box :hover{
+    text-decoration: underline white;
+}
 
 /*footer*/
+footer{
+    background: var(--dark);
+    width: auto;
+    color: var(--primary);
+    text-align: center;
+}
