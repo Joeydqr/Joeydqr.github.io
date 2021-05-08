@@ -120,14 +120,25 @@ img{
      justify-items: baseline;
      box-shadow: var(--shadow);
      padding: 1.5rem;
+     
+     
+     
+ }
+ .top-box a{
+     color: rgba(255, 255, 255, 0.205);
  }
  .top-box-a{
      grid-area: top-box-a;
      background-image: url(../Images/octane.png);
      background-size: cover;
      background-position: center;
+    
+     
+     
 
  }
+ 
+ 
  .top-box-b{
     grid-area: top-box-b;
     background-image: url(../Images/fennec.png);
@@ -151,10 +162,11 @@ img{
 }
 
 .top-box a:hover{
-    /*background: rgb(221, 221, 221, 0.9);
-    color: var(--dark);
-    border-radius: 5%;*/
-    text-decoration: underline;
+    color: var(--primary); 
+    
+     
+    
+    
 }
 .boxes{
     display: grid;
@@ -271,18 +283,28 @@ footer{
         'showcase showcase'
         'top-box-a top-box-b'
         'top-box-c top-box-d';     
+      
         
     }
-   body{
+   .main-nav ul{
    
-   margin: auto;
+    background: var(--dark);
+    display: block;
+    text-decoration: none;
+    padding: 0.2rem;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
    
    }
-    .main-container{
-        grid-template-areas: 
-        'showcase showcase'
-        'top-box-a top-box-b'
-        'top-box-c top-box-d';
+    .showcasemain{
+        display: grid;
+        justify-content: center;
+        
+       
+
            
     }
     .portfolio{
@@ -301,15 +323,18 @@ footer{
     }
    body{
    
-   margin: auto;
+    
+
    
    }
     .main-container{
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
-        'top-box-c top-box-d';
-           
+        'top-box-c top-box-d';        
+    }
+    .top-box a{
+        
     }
     .portfolio{
         display: none;
