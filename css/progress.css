@@ -82,9 +82,9 @@ img{
  .showcase{
      grid-area: showcase;
      min-height: 400px;
-     background: url(../Images/octane.png);
+     background: url(../Images/Mylobbypic.png);
      background-size: cover;
-     background-position: center;
+     background-position: bottom;
      padding: 3rem;
      display: flex;
      flex-direction: column;

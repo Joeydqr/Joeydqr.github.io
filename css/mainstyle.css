@@ -1,3 +1,7 @@
+
+
+
+
 :root {
     --primary: #ddd;
     --dark: #333;
@@ -111,6 +115,7 @@ img{
      background: var(--primary);
      font-weight: bold;
      display: grid;
+     flex-direction: column;
      align-items: center;
      justify-items: baseline;
      box-shadow: var(--shadow);
@@ -155,6 +160,7 @@ img{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
 }
 .box{
     background: var(--primary);
@@ -168,21 +174,79 @@ img{
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--primary);
+    
 }
 .box :hover{
     text-decoration: underline white;
 }
-.mainpageinfo {
+
+ .main-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+       'showcase showcase top-box-a'
+       'showcase showcase top-box-b'
+       'showcase showcase top-box-c'
+       'showcase showcase top-box-d';
+}
+.showcasemain{
+    grid-area: showcase;
+    min-height:500px;
+ 
+    
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.main-boxes{
+    display: grid;
+    padding-top: 1.2rem;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+}
+.main-box{
     background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
+}
+
+
+.boxx {
+    background: var(--dark);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    color: var(--primary);
+}
+
+
+
+
+
+/*.mainpageinfo {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem;
-    align-items: center;
+    justify-content: start;
+    align-items:flex-start;
+    
+    
     
 }
-
+*/
 
 /*portfolio*/
 .portfolio {
@@ -197,5 +261,33 @@ footer{
     width: auto;
     color: var(--primary);
     text-align: center;
+    display: grid;
+}
+
+
+@media (max-width: 30em) {
+    .top-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';     
+        
+    }
+    html{
+        margin-left: -2em;
+        margin-right: 1em;
+        
+        
+    }
+    .main-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';
+           
+    }
+    .portfolio{
+        display: none;
+    }
    
 }
