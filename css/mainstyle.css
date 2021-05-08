@@ -278,18 +278,30 @@ footer{
 
 
 @media (max-width: 430px) {
+   
+    
     .top-container{
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
         'top-box-c top-box-d';     
-      
         
+       display: grid;
+       justify-content: center;
+       margin-left: -1em;
+       margin-right: 1em;
     }
-   .main-nav ul{
+  
+    .body{
+        display: grid;
+        justify-content: center;
+        margin-left: -1em;
+        margin-right: 1em;
+    }
+    .main-nav ul{
    
     background: var(--dark);
-    display: block;
+    display: flex;
     text-decoration: none;
     padding: 0.2rem;
     text-align: center;
@@ -297,15 +309,36 @@ footer{
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
-   
+    margin-left: -2.8em;
+   }
+   .boxes{
+    display: grid;
+    justify-content: center;
+    margin-left: -1em;
+    margin-right: 1em;
+   }
+   .main-boxes{
+    display: grid;
+    justify-content: center;
+    margin-left: -1em;
+    margin-right: 1em;
+   }
+   .main-container{
+    display: grid;
+    justify-content: center;
+    margin-left: -1em;
+    margin-right: 1em;
    }
     .showcasemain{
         display: grid;
-        justify-content: center;
-        
-       
+        justify-content: center;             
+    }
 
-           
+    .boxx{
+        display: grid;
+        justify-content: center;
+        margin-left: -1em;
+        margin-right: 1em;
     }
     .portfolio{
         display: none;
@@ -313,7 +346,7 @@ footer{
    
 }
 
-@media (max-width: 700px) {
+@media (max-width: 830px) {
     .top-container{
         grid-template-areas: 
         'showcase showcase'
