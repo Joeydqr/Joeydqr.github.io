@@ -273,12 +273,11 @@ footer{
         'top-box-c top-box-d';     
         
     }
-    html{
-        margin-left: -2em;
-      
-        
-        
-    }
+   body{
+   
+   margin: auto;
+   
+   }
     .main-container{
         grid-template-areas: 
         'showcase showcase'
