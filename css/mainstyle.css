@@ -265,7 +265,7 @@ footer{
 }
 
 
-@media (max-width: 30em) {
+@media (max-width: 412px) {
     .top-container{
         grid-template-areas: 
         'showcase showcase'
