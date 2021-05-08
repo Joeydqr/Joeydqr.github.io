@@ -290,3 +290,29 @@ footer{
     }
    
 }
+
+@media (max-width: 700px) {
+    .top-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';     
+        
+    }
+   body{
+   
+   margin: auto;
+   
+   }
+    .main-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';
+           
+    }
+    .portfolio{
+        display: none;
+    }
+   
+}
