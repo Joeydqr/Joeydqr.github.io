@@ -49,23 +49,24 @@ img{
 }
  /*Navigation*/
  .main-nav ul {
-     display: grid;
-     grid-gap: 20px;
-     padding: 0;
-     list-style: none;
-     grid-template-columns: repeat(4, 1fr);
- }
+    display: flex;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--dark);
+}
  .main-nav a {
-     background: var(--dark);
-     display: block;
-     text-decoration: none;
-     padding: 0.8rem;
-     text-align: center;
-     color: var(--primary);
-     text-transform: uppercase;
-     font-size: 1.1rem;
-     box-shadow: var(--shadow);
- }
+    background: var(--dark);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
 
  .main-nav a:hover{
      background: var(--primary);

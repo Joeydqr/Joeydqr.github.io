@@ -49,23 +49,24 @@ img{
 }
  /*Navigation*/
  .main-nav ul {
-     display: grid;
-     grid-gap: 20px;
-     padding: 0;
-     list-style: none;
-     grid-template-columns: repeat(4, 1fr);
- }
+    display: flex;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--dark);
+}
  .main-nav a {
-     background: var(--dark);
-     display: block;
-     text-decoration: none;
-     padding: 0.8rem;
-     text-align: center;
-     color: var(--primary);
-     text-transform: uppercase;
-     font-size: 1.1rem;
-     box-shadow: var(--shadow);
- }
+    background: var(--dark);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
 
  .main-nav a:hover{
      background: var(--primary);
@@ -80,6 +81,7 @@ img{
      display: grid;
      grid-gap: 20px;
      grid-template-areas: 
+        'main-nav main-nav main-nav'
         'showcase showcase top-box-a'
         'showcase showcase top-box-b'
         'showcase showcase top-box-c'
@@ -290,11 +292,10 @@ footer{
         
         
     }
-    .wrapper{
-        margin-left: rem;
-    }
-    .main-nav ul{
    
+       
+   
+    .main-nav ul{
     background: var(--dark);
     display: flex;
     text-decoration: none;
@@ -304,7 +305,7 @@ footer{
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
-    margin-left: -2.5em;
+    
    }
    .boxes{
     display: grid;
@@ -340,10 +341,7 @@ footer{
         
           
     }
-    .youtubevid{
-        
-        
-    }
+    
 
     .boxx{
         display: grid;
@@ -357,7 +355,6 @@ footer{
     footer{
        margin-left: -2.3rem;
     }
-   
 }
 
 @media (max-width: 830px) {
