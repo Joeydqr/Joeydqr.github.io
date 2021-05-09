@@ -260,14 +260,14 @@ footer{
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
    
     
     .top-container{
-        grid-template-areas: 
+      /*   grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
-        'top-box-c top-box-d';
+        'top-box-c top-box-d'; */
              
         
        display: grid;
@@ -275,17 +275,27 @@ footer{
        margin-left: -1em;
        margin-right: 1em;
     }
-  
+    .wrapper{
+        grid-template-areas: 
+        'nav       nav'
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d'
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d'
+        'footer footer';
+    }
     .body{
         display: grid;
         justify-content: center;
-        margin-left: -1em;
-        margin-right: 1em;
+        
+        
     }
     .main-nav ul{
    
     background: var(--dark);
-    display: flex;
+    display: grid;
     text-decoration: none;
     padding: 0.2rem;
     text-align: center;
