@@ -125,7 +125,7 @@ img{
      
  }
  .top-box a{
-     color: rgba(255, 255, 255, 0.305);
+     color: rgba(255, 255, 255, 0.205);
  }
  .top-box-a{
      grid-area: top-box-a;
@@ -265,33 +265,19 @@ footer{
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
-        'top-box-c top-box-d';  
-        
+        'top-box-c top-box-d';     
         
        display: grid;
        justify-content: center;
        margin-left: -1em;
        margin-right: 1em;
     }
-    .showcase {
-        align-items: center;
-        justify-content:center;
-    }
-    .showcase{
-        padding: 0;
-        margin-left: -2.5rem;
-        margin-right: -1.5rem;
-    }
   
     .body{
         display: grid;
         justify-content: center;
-        box-sizing: border-box;
-        
-        
-    }
-    .wrapper{
-        margin-left: rem;
+        margin-left: -1em;
+        margin-right: 1em;
     }
     .main-nav ul{
    
@@ -304,7 +290,7 @@ footer{
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
-    margin-left: -2.5em;
+    margin-left: -2.8em;
    }
    .boxes{
     display: grid;
@@ -319,30 +305,14 @@ footer{
     margin-right: 1em;
    }
    .main-container{
-    grid-template-areas: 
-        'showcaseshowcase'       
-        'top-box-a top-box-b'
-        'top-box-c top-box-d'
-        'footer     footer';     
-        
-       display: grid;
-       justify-content: center;
-       margin-left: -1em;
-       margin-right: 1em;
+    display: grid;
+    justify-content: center;
+    margin-left: -1em;
+    margin-right: 1em;
    }
-  
     .showcasemain{
-        
-        padding: 0;
-        margin-left: -2.5rem;
-        margin-right: -1.59rem;
-        height: 100%;
-        
-          
-    }
-    .youtubevid{
-        
-        
+        display: grid;
+        justify-content: center;             
     }
 
     .boxx{
@@ -353,9 +323,6 @@ footer{
     }
     .portfolio{
         display: none;
-    }
-    footer{
-       margin-left: -2.3rem;
     }
    
 }
