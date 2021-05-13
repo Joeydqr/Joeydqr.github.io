@@ -283,16 +283,28 @@ footer{
    body{
        margin:0;
    }
-   .wrapper
+   
+  ul{
+      justify-content: center;
+      background: var(--primary);
+      
+  }
     
     nav{
         grid-area: nav;
-        background: var(--dark);
+        
         grid-gap: 0;
+        
        
         
         
          
+    }
+    .main-nav ul{
+        background: #ccc;
+        display: grid;
+       
+        
     }
     .main-nav a{
         font-size: 0.9rem;
@@ -320,13 +332,21 @@ footer{
     .boxes{
         grid-template-columns: auto;
     }
+    .main-boxes{
+        grid-template-columns: auto;
+    }
     .main-container{
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
         'top-box-c top-box-d';        
     }
-    
+    .main-nav ul{
+        justify-content: center;
+        
+       
+        
+    }
     .portfolio{
         display: none;
     }

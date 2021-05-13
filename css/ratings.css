@@ -16,10 +16,13 @@ html{
     
 
 }
-
+span{
+    color: red;
+    font-size: x-large;
+}
 body {
     background: #ccc;
-    margin: 30px 50px;
+    
     line-height: 1.4;
     
 }
@@ -43,14 +46,10 @@ img{
     max-width: 100%;
 }
 
-.wrapper{
-    display: grid;
-    grid-gap: 20px;
-}
+
  /*Navigation*/
  .main-nav ul {
     display: flex;
-    grid-gap: 20px;
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
@@ -81,6 +80,7 @@ img{
      display: grid;
      grid-gap: 20px;
      grid-template-areas: 
+        'header header header'
         'showcase showcase top-box-a'
         'showcase showcase top-box-b'
         'showcase showcase top-box-c'
@@ -89,7 +89,7 @@ img{
  .showcase{
      grid-area: showcase;
      min-height: 400px;
-     background: url(../Images/season3-header-test.jpg);
+     background: url(../Images/ratingsheader.jpg);
      background-size: cover;
      background-position: center;
      padding: 3rem;
@@ -126,7 +126,7 @@ img{
      
  }
  .top-box a{
-     color: rgba(255, 255, 255, 0.205);
+     color: rgba(255, 255, 255, 0.305);
  }
  .top-box-a{
      grid-area: top-box-a;
@@ -170,8 +170,11 @@ img{
     
 }
 .boxes{
+    font-size: larger;
     display: grid;
-    grid-gap: 30px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     
 }
@@ -187,6 +190,7 @@ img{
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--primary);
+    display: grid;
     
 }
 .box :hover{
@@ -194,7 +198,9 @@ img{
 }
 
  .main-container{
+     
     display: grid;
+    padding-top: 1.2rem;
     grid-gap: 20px;
     grid-template-areas: 
        'showcase showcase top-box-a'
@@ -218,9 +224,10 @@ img{
 }
 
 .main-boxes{
+    font-size: larger;
     display: grid;
     padding-top: 1.2rem;
-    grid-gap: 30px;
+    grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     
 }
@@ -244,8 +251,9 @@ img{
 
 /*portfolio*/
 .portfolio {
+    
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -259,100 +267,97 @@ footer{
 }
 
 
-@media (max-width: 430px) {
+ @media (max-width: 580px) {
    
-    
     .top-container{
         grid-template-areas: 
-        'showcase showcase'
-        'top-box-a top-box-b'
-        'top-box-c top-box-d';     
-        
+        'nav'
+        'showcase '
+        'top-box-a'
+        'top-box-b'
+        'top-box-c '
+        'top-box-d';     
        display: grid;
-       justify-content: center;
-       margin-left: -1em;
-       margin-right: 1em;
-    }
-  
-    .body{
-        display: grid;
-        justify-content: center;
-        margin-left: -1em;
-        margin-right: 1em;
-    }
-    .main-nav ul{
-   
-    background: var(--dark);
-    display: flex;
-    text-decoration: none;
-    padding: 0.2rem;
-    text-align: center;
-    color: var(--primary);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow);
-    margin-left: -2.8em;
-   }
-   .boxes{
-    display: grid;
-    justify-content: center;
-    margin-left: -1em;
-    margin-right: 1em;
-   }
-   .main-boxes{
-    display: grid;
-    justify-content: center;
-    margin-left: -1em;
-    margin-right: 1em;
-   }
-   .main-container{
-    display: grid;
-    justify-content: center;
-    margin-left: -1em;
-    margin-right: 1em;
-   }
-    .showcasemain{
-        display: grid;
-        justify-content: center;             
-    }
-
-    .boxx{
-        display: grid;
-        justify-content: center;
-        margin-left: -1em;
-        margin-right: 1em;
-    }
-    .portfolio{
-        display: none;
-    }
-   
-}
-
-@media (max-width: 830px) {
-    .top-container{
-        grid-template-areas: 
-        'showcase showcase'
-        'top-box-a top-box-b'
-        'top-box-c top-box-d';     
+        grid-gap: 0;
         
+        
+    }
+    .main-container{
+        grid-gap: 0;
     }
    body{
-   
-    
-
-   
+       margin:0;
    }
+   
+  ul{
+      justify-content: center;
+      background: var(--primary);
+      
+  }
+    
+    nav{
+        grid-area: nav;
+        
+        grid-gap: 0;
+        
+       
+        
+        
+         
+    }
+    .main-nav ul{
+        background: #ccc;
+        display: grid;
+       
+        
+    }
+    .main-nav a{
+        font-size: 0.9rem;
+        
+    }
+   
+  
+  
+    
+   
+}  
+
+@media (max-width: 1024px) {
+    .top-container{
+        grid-template-areas: 
+        'header header'
+        'showcase showcase'
+        'top-box-a top-box-b'
+        'top-box-c top-box-d';     
+        
+    }
+    body{
+        margin: 0;
+    }
+    .boxes{
+        grid-template-columns: auto;
+    }
+    .main-boxes{
+        grid-template-columns: auto;
+    }
     .main-container{
         grid-template-areas: 
         'showcase showcase'
         'top-box-a top-box-b'
         'top-box-c top-box-d';        
     }
-    .top-box a{
+    .main-nav ul{
+        justify-content: center;
+        
+       
         
     }
     .portfolio{
         display: none;
     }
-   
+   footer{
+       grid-area: footer;
+       display: grid;
+       justify-content: center;
+   }
 }
