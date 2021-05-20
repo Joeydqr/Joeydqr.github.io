@@ -25,11 +25,22 @@ body {
 }
 
 .btn{
+    
     background: var(--dark);
     color: var(--light);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
+    transition: .2s ease-in-out 0s;
+    border: 2px solid var(--shadow);
+
+}
+.btn:hover{
+cursor: pointer;
+background: var(--primary);
+border: solid 2px var(--dark);
+color: var(--dark);
+font-weight: bolder;
 }
 .btncars{
     
