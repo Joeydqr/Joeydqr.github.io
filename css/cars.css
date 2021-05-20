@@ -74,6 +74,20 @@ img{
     font-size: 1.1rem;
     box-shadow: var(--shadow);
 }
+.main-nav a.active:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--dark);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.main-nav a.active:hover:after {
+    width: 100%;
+    left: 0;
+}
 
 .main-nav a:after,.top-box a:after{    
     background: none repeat scroll 0 0 transparent;   
@@ -84,7 +98,7 @@ img{
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-.main-nav a:hover:after,.top-box a:hover::after { 
+.main-nav a:hover:after,.top-box a:hover:after { 
     width: 100%; 
     left: 0; 
   }
