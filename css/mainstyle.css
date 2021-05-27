@@ -16,7 +16,9 @@ html {
 
 
 }
-
+header{
+    display: grid;
+}
 body {
 
     background: #ccc;
@@ -107,10 +109,11 @@ figure{
     width: 0;
 }
 
-.main-nav a:hover:after,
-.top-box a:hover:after {
+.main-nav:hover a:after,
+.top-box:hover a:after {
     width: 100%;
     left: 0;
+    color: var(--primary);
 }
 
 
@@ -121,15 +124,16 @@ li .active {
 
 /*top cointainer*/
 .top-container {
-    display: grid;
+     display: grid;
     grid-gap: 20px;
     grid-template-areas:
         'header header header'
-        'showcase showcase top-box-a'
-        'showcase showcase top-box-b'
-        'showcase showcase top-box-c'
-        'showcase showcase top-box-d'
-    ;
+        'showcase showcase top-box-octane'
+        'showcase showcase top-box-fennec'
+        'showcase showcase top-box-dominus'
+        'showcase showcase top-box-batmobile'
+        
+    ; 
 }
 
 .showcase {
@@ -176,11 +180,11 @@ li .active {
 }
 
 .top-box a {
-    color: rgba(255, 255, 255, 0.305);
+    color: rgba(255, 255, 255, 0.575);
 }
 
-.top-box-a {
-    grid-area: top-box-a;
+.top-box-octane {
+    grid-area: top-box-octane;
     background-image: url(../Images/octane.png);
     background-size: cover;
     background-position: center;
@@ -188,24 +192,24 @@ li .active {
 }
 
 
-.top-box-b {
-    grid-area: top-box-b;
+.top-box-fennec {
+    grid-area: top-box-fennec;
     background-image: url(../Images/fennec.png);
     background-size: cover;
     background-position: center;
 
 }
 
-.top-box-c {
-    grid-area: top-box-c;
+.top-box-dominus {
+    grid-area: top-box-dominus;
     background-image: url(../Images/dominus.jpg);
     background-size: cover;
     background-position: center;
 
 }
 
-.top-box-d {
-    grid-area: top-box-d;
+.top-box-batmobile {
+    grid-area: top-box-batmobile;
     background-image: url(../Images/batmobile.jpg);
     background-size: cover;
     background-position: center;
@@ -243,36 +247,6 @@ li .active {
     padding: 1.5rem 2rem;
     box-shadow: var(--primary);
     display: grid;
-
-}
-
-
-.main-container {
-
-
-    display: grid;
-    padding-top: 1.2rem;
-    grid-gap: 20px;
-    grid-template-areas:
-        'showcase showcase top-box-a'
-        'showcase showcase top-box-b'
-        'showcase showcase top-box-c'
-        'showcase showcase top-box-d';
-
-}
-
-.showcasemain {
-    grid-area: showcase;
-    min-height: 500px;
-
-
-    background-size: cover;
-    background-position: center;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
 
 }
 
@@ -326,59 +300,31 @@ footer {
 
     .top-container {
         grid-template-areas:
-            'nav'
+            'header'
             'showcase '
-            'top-box-a'
-            'top-box-b'
-            'top-box-c '
-            'top-box-d';
+            'top-box-octane'
+            'top-box-fennec'
+            'top-box-dominus '
+            'top-box-batmobile'
+            'footer';
         display: grid;
-        grid-gap: 0;
-
-
-    }
-
-    .main-container {
         grid-gap: 0;
     }
 
     body {
         margin: 0;
     }
-
     ul {
         justify-content: center;
         background: var(--primary);
-
     }
-
-    nav {
-        grid-area: nav;
-
-        grid-gap: 0;
-
-
-
-
-
-    }
-
     .main-nav ul {
         background: #ccc;
         display: grid;
-
-
     }
-
     .main-nav a {
         font-size: 0.9rem;
-
     }
-
-
-
-
-
 }
 
 @media (max-width: 1024px) {
@@ -386,13 +332,13 @@ footer {
         grid-template-areas:
             'header header'
             'showcase showcase'
-            'top-box-a top-box-b'
-            'top-box-c top-box-d';
-
+            'top-box-octane top-box-fennec'
+            'top-box-dominus top-box-batmobile'
+            'footer footer';
     }
 
     body {
-        margin: 0;
+        margin: 0.2em;
     }
 
     .boxes {
@@ -403,18 +349,9 @@ footer {
         grid-template-columns: auto;
     }
 
-    .main-container {
-        grid-template-areas:
-            'showcase showcase'
-            'top-box-a top-box-b'
-            'top-box-c top-box-d';
-    }
 
     .main-nav ul {
         justify-content: center;
-
-
-
     }
 
     .portfolio {
