@@ -6,3 +6,20 @@
     background-position: center;
 }
 
+.octanehitbox{
+    width: auto;
+}
+.fenneclink{
+    text-decoration: none;
+    color: rgb(202, 1, 1);
+}
+.fenneclink:hover{
+    color: var(--dark);
+}
+.fennecdivlink:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+.octanepng{
+    width: 40em;
+}
